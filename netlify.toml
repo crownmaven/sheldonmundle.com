@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "http://*"
+  to = "https://www.sheldonmundle.com/:splat"
+  status = 301
+  force = true
+
+[dev]
+  framework = "none"
