@@ -268,6 +268,12 @@
     min-height: 170px;
   }
 
+  .pillar--final {
+    grid-column: 1 / -1;
+    max-width: calc((100% - 32px) / 2);
+    margin: 0 auto;
+  }
+
   .pillar-num {
     font-family: 'Cinzel', serif;
     font-size: 10px;
@@ -374,8 +380,13 @@
     letter-spacing: 0.01em;
   }
 
-  .house-names {
-    margin-top: 22px;
+  .house-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .house-group-names {
     font-family: 'EB Garamond', serif;
     font-size: 16px;
     color: var(--muted);
@@ -568,7 +579,7 @@
   <section class="creed" aria-labelledby="creed-label">
     <div class="creed-eyebrow" id="creed-label">My Creed</div>
     <p class="creed-text">
-      <span class="first">It is my firm and faithful belief</span> that before I die my purpose on this earth is to honor God by connecting people to the relationships, wisdom, and resources they need, and by using my gifts in mentorship, counsel, and technology leadership to build strategies, solutions, and tools that strengthen families, uplift communities, and help others live more fully under God's order.
+      <span class="first">It is my firm and faithful belief</span> that while I have breath my purpose on this earth is to honor God by connecting people to the relationships, wisdom, and resources they need, and by using my gifts in mentorship, counsel, and technology leadership to build strategies, solutions, and tools that strengthen families, uplift communities, and help others live more fully under God's order.
     </p>
     <p class="creed-close">In this, I will please God and establish a righteous example for my house.</p>
   </section>
@@ -612,7 +623,7 @@
         <h3 class="pillar-name">Example</h3>
         <p class="pillar-line">A righteous walk worth following.</p>
       </div>
-      <div class="pillar" style="grid-column: 1 / -1; max-width: 320px; margin: 0 auto; text-align: center; border-left: none; border-top: 1px solid var(--rule); padding: 22px 0 0;">
+      <div class="pillar pillar--final">
         <div class="pillar-num">VII</div>
         <h3 class="pillar-name">Legacy</h3>
         <p class="pillar-line">What remains after the work is done.</p>
@@ -630,7 +641,7 @@
 
     <div class="prose">
       <p>
-        A career spent at the intersection of <span class="emph">business and technology</span> — building strategies, solutions, and tools that help organizations move with clarity and purpose.
+        A career spent at the intersection of <span class="emph">business and technology</span> — building strategies, solutions, and tools that propel organizations forward with clarity and purpose.
       </p>
       <p>
         The work is, in the end, about people: the teams who deliver, the leaders who decide, and the communities they serve.
@@ -651,13 +662,15 @@
     </div>
 
     <div class="house-lines">
-      <div class="house-line">Father to three.</div>
-      <div class="house-line">Son to two.</div>
+      <div class="house-group">
+        <div class="house-line">Father to three.</div>
+        <div class="house-group-names">Solomon &middot; Ariana &middot; Malachi</div>
+      </div>
+      <div class="house-group">
+        <div class="house-line">Son to two.</div>
+        <div class="house-group-names">Dulcie &amp; Franklyn Mundle</div>
+      </div>
       <div class="house-line">Child of Yahuah.</div>
-    </div>
-    <div class="house-names">
-      Solomon &middot; Ariana &middot; Malachi<br>
-      Dulcie &amp; Franklyn Mundle
     </div>
   </section>
 
