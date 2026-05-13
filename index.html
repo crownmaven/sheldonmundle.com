@@ -121,6 +121,25 @@
     border-radius: 50%;
   }
 
+  /* ---------- Portrait ---------- */
+
+  .portrait {
+    text-align: center;
+    margin: 8px auto 56px;
+  }
+
+  .portrait img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    border: 1px solid var(--rule);
+    box-shadow: 0 14px 32px rgba(76, 56, 32, 0.12);
+    display: block;
+    margin: 0 auto;
+  }
+
   /* ---------- Creed (hero) ---------- */
 
   .creed {
@@ -458,6 +477,15 @@
       font-size: 30px;
       letter-spacing: 0.24em;
     }
+
+    .portrait {
+      margin: 4px auto 44px;
+    }
+
+    .portrait img {
+      width: 130px;
+      height: 130px;
+    }
   }
 
   @media (max-width: 380px) {
@@ -484,6 +512,11 @@
       font-size: 18px;
       padding: 26px 20px;
     }
+
+    .portrait img {
+      width: 108px;
+      height: 108px;
+    }
   }
 </style>
 </head>
@@ -500,6 +533,10 @@
       <span class="line"></span>
     </div>
   </header>
+
+  <div class="portrait">
+    <img src="assets/portrait.jpg" alt="Portrait of Sheldon Mundle" width="160" height="160">
+  </div>
 
   <!-- ============ CREED ============ -->
   <section class="creed" aria-labelledby="creed-label">
