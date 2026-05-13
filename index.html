@@ -255,12 +255,13 @@
 
   .pillars {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 26px 32px;
     margin-top: 24px;
   }
 
   .pillar {
+    grid-column: span 2;
     background: rgba(255, 255, 255, 0.76);
     border: 1px solid rgba(210, 193, 169, 0.7);
     border-radius: 20px;
@@ -269,9 +270,7 @@
   }
 
   .pillar--final {
-    grid-column: 1 / -1;
-    max-width: calc((100% - 32px) / 2);
-    margin: 0 auto;
+    grid-column: 2 / 4;
   }
 
   .pillar-num {
@@ -467,6 +466,11 @@
     .pillars {
       grid-template-columns: 1fr;
       gap: 18px;
+    }
+
+    .pillar,
+    .pillar--final {
+      grid-column: 1 / -1;
     }
 
     .pillar {
