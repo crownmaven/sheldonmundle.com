@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheldon Mundle — Business Technology Leader</title>
+<meta name="description" content="The personal creed, career, and house of Sheldon Mundle — a Business Technology Leader committed to honoring God through mentorship, counsel, and building what strengthens families and communities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EEE2;
+    --bg-2: #EDE4D2;
+    --ink: #2B231B;
+    --ink-soft: #4A3F33;
+    --muted: #7A6B58;
+    --rule: #C9BBA1;
+    --accent: #8A6A3C;
+    --accent-deep: #5E4624;
+    --gold: #A98545;
+    --max: 760px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse at top, rgba(169,133,69,0.06), transparent 60%),
+      radial-gradient(ellipse at bottom, rgba(94,70,36,0.04), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 80px 28px 100px;
+  }
+
+  /* ---------- Hero ---------- */
+
+  .topline {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .name {
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.32em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .title {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 14px;
+  }
+
+  .ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 28px auto 0;
+    color: var(--gold);
+    opacity: 0.7;
+  }
+  .ornament .line {
+    width: 60px;
+    height: 1px;
+    background: var(--rule);
+  }
+  .ornament .dot {
+    width: 5px;
+    height: 5px;
+    background: var(--gold);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+
+  /* ---------- Creed (hero) ---------- */
+
+  .creed {
+    margin: 60px 0 80px;
+    text-align: center;
+  }
+
+  .creed-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .creed-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .creed-text .first {
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-size: 22px;
+    color: var(--accent-deep);
+    letter-spacing: 0.02em;
+  }
+
+  .creed-close {
+    margin-top: 36px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  /* ---------- Section frame ---------- */
+
+  section {
+    margin: 80px 0;
+  }
+
+  .section-head {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  .section-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--ink);
+    margin: 14px 0 0;
+    letter-spacing: 0.01em;
+  }
+
+  .section-rule {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 22px auto 0;
+    opacity: 0.6;
+  }
+
+  /* ---------- Pillars ---------- */
+
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 40px;
+    margin-top: 20px;
+  }
+
+  .pillar {
+    padding: 22px 4px 22px 22px;
+    border-left: 1px solid var(--rule);
+  }
+
+  .pillar-num {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .pillar-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--ink);
+    margin: 0 0 6px;
+    letter-spacing: 0.01em;
+  }
+
+  .pillar-line {
+    font-size: 16px;
+    color: var(--ink-soft);
+    font-style: italic;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* ---------- Generic prose block ---------- */
+
+  .prose {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .prose p {
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+  }
+
+  .prose .emph {
+    font-style: italic;
+    color: var(--ink);
+  }
+
+  /* ---------- Career CTA ---------- */
+
+  .cta-row {
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  .cta {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 1px solid var(--rule);
+    background: rgba(255,255,255,0.25);
+    transition: all 0.2s ease;
+  }
+  .cta:hover {
+    background: var(--accent-deep);
+    color: var(--bg);
+    border-color: var(--accent-deep);
+  }
+
+  /* ---------- House ---------- */
+
+  .house {
+    text-align: center;
+  }
+
+  .house-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 8px;
+  }
+
+  .house-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .house-line .who {
+    color: var(--ink);
+    font-style: normal;
+    letter-spacing: 0.01em;
+  }
+
+  .house-names {
+    margin-top: 18px;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  /* ---------- Foundation ---------- */
+
+  .foundation-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--ink);
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+    text-wrap: balance;
+  }
+
+  /* ---------- Footer / Contact ---------- */
+
+  footer {
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+
+  .signoff {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 0.32em;
+    color: var(--ink);
+    text-transform: uppercase;
+  }
+
+  .contact-link {
+    display: inline-block;
+    margin-top: 22px;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color: var(--accent-deep);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+    letter-spacing: 0.04em;
+  }
+  .contact-link:hover {
+    color: var(--ink);
+  }
+
+  .benediction {
+    margin-top: 40px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  /* ---------- Responsive ---------- */
+
+  @media (max-width: 640px) {
+    .wrap { padding: 56px 22px 80px; }
+    .creed-text { font-size: 22px; }
+    .creed-text .first { font-size: 18px; }
+    .section-title { font-size: 26px; }
+    .pillars { grid-template-columns: 1fr; gap: 18px; }
+    .house-line { font-size: 19px; }
+    .foundation-quote { font-size: 19px; }
+    .name { font-size: 15px; letter-spacing: 0.28em; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ HEADER ============ -->
+  <header class="topline">
+    <h1 class="name">Sheldon Mundle</h1>
+    <div class="title">Business Technology Leader</div>
+    <div class="ornament" aria-hidden="true">
+      <span class="line"></span>
+      <span class="dot"></span>
+      <span class="line"></span>
+    </div>
+  </header>
+
+  <!-- ============ CREED ============ -->
+  <section class="creed" aria-labelledby="creed-label">
+    <div class="creed-eyebrow" id="creed-label">My Creed</div>
+    <p class="creed-text">
+      <span class="first">It is my firm and faithful belief</span> that before I die my purpose on this earth is to honor God by connecting people to the relationships, wisdom, and resources they need, and by using my gifts in mentorship, counsel, and technology leadership to build strategies, solutions, and tools that strengthen families, uplift communities, and help others live more fully under God's order.
+    </p>
+    <p class="creed-close">In this, I will please God and establish a righteous example for my house.</p>
+  </section>
+
+  <!-- ============ PILLARS ============ -->
+  <section aria-labelledby="pillars-label">
+    <div class="section-head">
+      <div class="section-eyebrow" id="pillars-label">By These I Walk</div>
+      <h2 class="section-title">The Seven Pillars</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-num">I</div>
+        <h3 class="pillar-name">Honor God</h3>
+        <p class="pillar-line">Every step taken under His order.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">II</div>
+        <h3 class="pillar-name">Wisdom</h3>
+        <p class="pillar-line">Seeking, holding, and passing it on.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">III</div>
+        <h3 class="pillar-name">Counsel</h3>
+        <p class="pillar-line">Listening before leading. Mentoring with care.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">IV</div>
+        <h3 class="pillar-name">Family</h3>
+        <p class="pillar-line">The first community I am called to serve.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">V</div>
+        <h3 class="pillar-name">Building</h3>
+        <p class="pillar-line">Strategies, solutions, and tools that serve.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">VI</div>
+        <h3 class="pillar-name">Example</h3>
+        <p class="pillar-line">A righteous walk worth following.</p>
+      </div>
+      <div class="pillar" style="grid-column: 1 / -1; max-width: 320px; margin: 0 auto; text-align: center; border-left: none; border-top: 1px solid var(--rule); padding: 22px 0 0;">
+        <div class="pillar-num">VII</div>
+        <h3 class="pillar-name">Legacy</h3>
+        <p class="pillar-line">What remains after the work is done.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREER ============ -->
+  <section aria-labelledby="career-label">
+    <div class="section-head">
+      <div class="section-eyebrow" id="career-label">The Work</div>
+      <h2 class="section-title">Career</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="prose">
+      <p>
+        A career spent at the intersection of <span class="emph">business and technology</span> — building strategies, solutions, and tools that help organizations move with clarity and purpose.
+      </p>
+      <p>
+        The work is, in the end, about people: the teams who deliver, the leaders who decide, and the communities they serve.
+      </p>
+    </div>
+
+    <div class="cta-row">
+      <a class="cta" href="https://www.linkedin.com/in/sheldonmundle" target="_blank" rel="noopener">View Career on LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ============ HOUSE ============ -->
+  <section class="house" aria-labelledby="house-label">
+    <div class="section-head">
+      <div class="section-eyebrow" id="house-label">Those I Serve First</div>
+      <h2 class="section-title">My House</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="house-lines">
+      <div class="house-line">Father to three.</div>
+      <div class="house-line">Son to two.</div>
+      <div class="house-line">Child of Yahuah.</div>
+    </div>
+    <div class="house-names">
+      Solomon &middot; Ariana &middot; Malachi<br>
+      Dulcie &amp; Franklyn Mundle
+    </div>
+  </section>
+
+  <!-- ============ FOUNDATION ============ -->
+  <section aria-labelledby="foundation-label">
+    <div class="section-head">
+      <div class="section-eyebrow" id="foundation-label">What Grounds Me</div>
+      <h2 class="section-title">Foundation</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <p class="foundation-quote">
+      My life is first to be pleasing to God. From that foundation, I use my gifts, wisdom, and relationships to strengthen people, build what serves, and leave behind a righteous example — for my house and for my community.
+    </p>
+  </section>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer>
+    <div class="signoff">Sheldon Mundle</div>
+    <a class="contact-link" href="https://www.linkedin.com/in/sheldonmundle" target="_blank" rel="noopener">linkedin.com/in/sheldonmundle</a>
+    <div class="benediction">Soli Deo Gloria &mdash; To God alone be the glory.</div>
+  </footer>
+
+</div>
+</body>
+</html>
