@@ -4,7 +4,7 @@
 
 [[redirects]]
   from = "http://*"
-  to = "https://www.sheldonmundle.com/:splat"
+  to = "https://sheldonmundle.com/:splat"
   status = 301
   force = true
 
