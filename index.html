@@ -473,6 +473,14 @@
     margin-bottom: 14px;
   }
 
+  .contact-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
   .contact-link {
     display: inline-block;
     font-size: 14px;
@@ -480,7 +488,6 @@
     text-decoration: none;
     border-bottom: 1px solid rgba(201, 163, 106, 0.3);
     padding-bottom: 1px;
-    margin-bottom: 22px;
   }
 
   .contact-link:hover {
@@ -703,7 +710,10 @@
   <!-- ============ FOOTER ============ -->
   <footer>
     <div class="signoff">Sheldon Mundle</div>
-    <a class="contact-link" href="https://www.linkedin.com/in/sheldonmundle" target="_blank" rel="noopener noreferrer">linkedin.com/in/sheldonmundle</a>
+    <div class="contact-stack">
+      <a class="contact-link" href="tel:+14049396303">+1-404-939-6303</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/sheldonmundle" target="_blank" rel="noopener noreferrer">linkedin.com/in/sheldonmundle</a>
+    </div>
     <div class="benediction">Soli Deo Gloria &mdash; To God alone be the glory.</div>
   </footer>
 
