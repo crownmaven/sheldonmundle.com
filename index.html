@@ -46,7 +46,7 @@
 
   body {
     min-height: 100vh;
-    padding: 24px 0;
+    padding: 24px 14px;
   }
 
   .wrap {
@@ -404,6 +404,10 @@
       padding: 58px 24px 72px;
     }
 
+    .topline {
+      margin-bottom: 48px;
+    }
+
     .pillars {
       grid-template-columns: 1fr;
       gap: 18px;
@@ -411,6 +415,20 @@
 
     .pillar {
       padding: 22px 20px;
+    }
+
+    .pillar-name {
+      font-size: 20px;
+    }
+
+    .prose p {
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    footer {
+      margin-top: 72px;
+      padding-top: 40px;
     }
   }
 
@@ -439,6 +457,32 @@
     .name {
       font-size: 30px;
       letter-spacing: 0.24em;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .wrap {
+      padding: 44px 18px 56px;
+      border-radius: 22px;
+    }
+
+    .name {
+      font-size: 22px;
+      letter-spacing: 0.2em;
+    }
+
+    .section-eyebrow {
+      font-size: 13px;
+      letter-spacing: 0.3em;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .foundation-quote {
+      font-size: 18px;
+      padding: 26px 20px;
     }
   }
 </style>
