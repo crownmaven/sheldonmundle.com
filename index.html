@@ -115,14 +115,88 @@
   }
 
   .portrait img {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 30%;
     border: 2px solid rgba(255, 255, 255, 0.15);
     display: block;
     margin: 0 auto;
+  }
+
+  .portrait-link {
+    display: inline-block;
+    cursor: zoom-in;
+    border-radius: 50%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .portrait-link:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+  }
+
+  /* ---------- Photo lightbox (CSS-only :target) ---------- */
+  .photo-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 10, 14, 0.92);
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 100;
+  }
+  .photo-modal:target { display: flex; }
+
+  .photo-modal__overlay {
+    position: absolute;
+    inset: 0;
+    cursor: zoom-out;
+  }
+
+  .photo-modal__frame {
+    position: relative;
+    z-index: 2;
+    max-width: min(90vw, 900px);
+    background: var(--bg-card);
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid var(--rule-strong);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  }
+
+  .photo-modal__frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(90vh - 60px);
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  .photo-modal__close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    background: var(--bg-dark);
+    color: var(--ink);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    border: 1px solid var(--rule-strong);
+    border-radius: 50%;
+    z-index: 3;
+  }
+  .photo-modal__close:hover {
+    background: var(--bg-card);
+    border-color: var(--gold);
   }
 
   .creed-tag {
@@ -443,8 +517,8 @@
     }
 
     .portrait img {
-      width: 120px;
-      height: 120px;
+      width: 170px;
+      height: 170px;
     }
 
     .creed {
@@ -488,8 +562,8 @@
     }
 
     .portrait img {
-      width: 104px;
-      height: 104px;
+      width: 140px;
+      height: 140px;
     }
 
     .creed-text { font-size: 15px; }
@@ -523,7 +597,9 @@
   <header class="hero">
     <h1 class="name">Sheldon Mundle</h1>
     <div class="portrait">
-      <img src="assets/portrait.jpg" alt="Portrait of Sheldon Mundle" width="140" height="140">
+      <a href="#photo-modal" class="portrait-link" aria-label="View larger portrait">
+        <img src="assets/portrait.jpg" alt="Portrait of Sheldon Mundle" width="200" height="200">
+      </a>
     </div>
     <div class="creed-tag">My Creed</div>
   </header>
@@ -632,5 +708,15 @@
   </footer>
 
 </div>
+
+<!-- ============ PHOTO LIGHTBOX ============ -->
+<div id="photo-modal" class="photo-modal" role="dialog" aria-label="Sheldon Mundle — larger portrait">
+  <a href="#" class="photo-modal__overlay" aria-label="Close"></a>
+  <div class="photo-modal__frame">
+    <a href="#" class="photo-modal__close" aria-label="Close">&times;</a>
+    <img src="assets/portrait-large.jpg" alt="Sheldon Mundle, against the Atlanta skyline at sunset" loading="lazy">
+  </div>
+</div>
+
 </body>
 </html>
