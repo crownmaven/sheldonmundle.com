@@ -1,3 +1,8 @@
-# www → apex redirect (works on both Cloudflare Pages and Netlify).
-# http → https is handled automatically by both providers, so no http source line is needed here.
-https://www.sheldonmundle.com/* https://sheldonmundle.com/:splat 301
+# No path-based redirects defined.
+#
+# On Cloudflare Workers/Pages, hostname-prefixed sources are not allowed in
+# this file. The www → apex redirect is handled at the domain-binding level
+# instead (both domains attached to the Worker; apex set as the primary).
+#
+# On Netlify, http → https and www → apex are handled in netlify.toml plus
+# Netlify's domain settings.
