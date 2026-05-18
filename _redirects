@@ -1,2 +1,3 @@
-http://www.sheldonmundle.com/* https://sheldonmundle.com/:splat 301!
-http://sheldonmundle.com/* https://sheldonmundle.com/:splat 301!
+# www → apex redirect (works on both Cloudflare Pages and Netlify).
+# http → https is handled automatically by both providers, so no http source line is needed here.
+https://www.sheldonmundle.com/* https://sheldonmundle.com/:splat 301
