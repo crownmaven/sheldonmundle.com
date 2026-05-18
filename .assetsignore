@@ -1,0 +1,24 @@
+# Files in the repo root that should NOT be served as static assets.
+# The .assetsignore format follows gitignore syntax.
+
+# Worker entry point and config — these are server-side, not public assets.
+_worker.js
+wrangler.toml
+.assetsignore
+
+# Local tool caches and build artifacts.
+.wrangler/
+.vercel/
+node_modules/
+
+# Provider-specific config and meta.
+_headers
+_redirects
+netlify.toml
+vercel.json
+
+# Repo housekeeping.
+.git/
+.gitignore
+.DS_Store
+*.md
