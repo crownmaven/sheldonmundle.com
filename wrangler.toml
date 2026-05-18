@@ -1,0 +1,10 @@
+name = "sheldonmundle"
+main = "_worker.js"
+compatibility_date = "2026-05-01"
+
+# Static assets at the repo root. The Worker script wraps every request so it
+# can issue the www → apex 301 before assets are served.
+[assets]
+directory = "."
+binding = "ASSETS"
+run_worker_first = true
